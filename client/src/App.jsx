@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -11,15 +10,16 @@ import MainLayout from "./layouts/MainLayout";
 
 function App() {
   return (
-    <div className="px-4 md:px-6 lg:px-12 xl:px-24 2xl:px-48">
-      <MainLayout />
+    <div className="px-4 md:px-4 lg:px-7 xl:px-10 2xl:px-20">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/posts" element={<PostListPage />} />
-        <Route path="/:slug" element={<SinglePostPage />} />
-        <Route path="/write" element={<WritePage />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/posts" element={<PostListPage />} />
+          <Route path="/:slug" element={<SinglePostPage />} />
+          <Route path="/write" element={<WritePage />} />
+        </Route>
       </Routes>
     </div>
   );
