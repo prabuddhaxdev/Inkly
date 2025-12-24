@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <div className="w-full h-16 md:h-20 flex justify-between">
       {/* LOGO */}
-      <Link to="/" className="flex items-center text-3xl font-bold">
-        <img src="./logo.svg" className="w-20 h-15" alt="blog" />
+      <Link to="/" className="flex items-center text-3xl lg:text-4xl font-bold">
+        <img src="./logo.png" className="w-10 h-15" alt="" />
         <span>Inkly</span>
       </Link>
       {/* MOBILE MENU */}
