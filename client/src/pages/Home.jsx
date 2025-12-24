@@ -1,3 +1,4 @@
+import MainCategories from "../components/MainCategories";
 import { Link } from "react-router";
 
 
@@ -12,7 +13,6 @@ export default function Home(){
       </div>
       {/* INTRODUCTION */}
       <div className="flex items-center justify-between">
-        {/* titles */}
         <div className="">
           <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -22,7 +22,6 @@ export default function Home(){
             rerum accusantium.
           </p>
         </div>
-        {/* animated button */}
         <Link to="write" className="hidden md:block relative">
           <svg
             viewBox="0 0 200 200"
@@ -60,6 +59,7 @@ export default function Home(){
           </button>
         </Link>
       </div>
+      <MainCategories />
     </div>
   );
 };
