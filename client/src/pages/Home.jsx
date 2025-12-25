@@ -1,3 +1,4 @@
+import PostList from "../components/PostList";
 import FeaturedPosts from "../components/FeaturedPosts";
 import MainCategories from "../components/MainCategories";
 import { Link } from "react-router";
@@ -61,7 +62,11 @@ export default function Home(){
         </Link>
       </div>
       <MainCategories />
-      <FeaturedPosts/>
+      <FeaturedPosts />
+      <div className="">
+        <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+        <PostList />
+      </div>
     </div>
   );
 };
